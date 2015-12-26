@@ -15,6 +15,8 @@ class NewsRelationChecker {
      * setLocation().
      */
     public static boolean isRelatedToUser(String location) {
+	// TODO! Using NewsCollector::getUserLocation method, check if news is
+	// related to user.
         return false;
     }
 }

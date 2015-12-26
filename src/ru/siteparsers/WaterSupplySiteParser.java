@@ -56,9 +56,10 @@ class WaterSupplySiteParser extends AbstractSiteParser {
                 // Метод html() выдает текст элемента с тегами html.
                 String descrS = descr.html();
                 descrS = descrS.substring(0,descrS.indexOf("<br>"));
+		boolean relation = NewsRelationChecker.isRelatedToUser(descrS);
                 //Добавляем новость в список.
                 News news = new News(dateS, WaterSupplySiteParser.SOURCE_CODE,
-                    false, descrS);
+                    relation, descrS);
                 newsList.add(news);
             }
             // Отправляем новости в NewsCollector.

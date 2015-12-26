@@ -57,4 +57,12 @@ public class NewsCollector {
     public List<News> getNews() {
         return mNewsList;
     }
+
+    /**
+     * Check user location.
+     * @return User location.
+     */
+    String getUserLocation() {
+	return "";
+    }
 }
