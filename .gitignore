@@ -1,0 +1,8 @@
+# For emacs users. Ignore tmp emacs files.
+*~
+
+# Ignore bin files (*.class, *.jar, etcetra).
+bin/*
+
+# Ignoring build logs if run `build.bat build 2> build.log` to save output in file.
+build.log
